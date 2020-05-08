@@ -129,7 +129,7 @@ peerConnection.ontrack = function({ streams: [stream] }) {
 };
 
 navigator.getUserMedia(
-  { video: true, audio: true },
+  { video: false, audio: true },
   stream => {
     const localVideo = document.getElementById("local-video");
     if (localVideo) {
